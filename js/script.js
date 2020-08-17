@@ -128,3 +128,138 @@ var bar = new ProgressBar.Line(wordpressBar, {
 });
 
 bar.animate(0.95); // Number from 0.0 to 1.0
+
+/*************************/
+// CIRCLE progress bar
+/*************************/
+
+// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+// WEB DESIGN
+var bar = new ProgressBar.Circle(circle1, {
+  color: "#aaa",
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: "easeInOut",
+  duration: 1400,
+  text: {
+    autoStyleContainer: false,
+  },
+  from: { color: "#fff", width: 1 },
+  to: { color: "#ffc576", width: 4 },
+  // Set default step function for all animate calls
+  step: function (state, circle) {
+    circle.path.setAttribute("stroke", state.color);
+    circle.path.setAttribute("stroke-width", state.width);
+
+    var value = Math.round(circle.value() * 100) + " %";
+    if (value === 0) {
+      circle.setText("");
+    } else {
+      circle.setText(value);
+    }
+  },
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = "1rem";
+
+bar.animate(0.8); // Number from 0.0 to 1.0
+
+// WEB DEVELOPMENT
+var bar = new ProgressBar.Circle(circle2, {
+  color: "#aaa",
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: "easeInOut",
+  duration: 1400,
+  text: {
+    autoStyleContainer: false,
+  },
+  from: { color: " #ffffff", width: 1 },
+  to: { color: "#ffc576", width: 4 },
+  // Set default step function for all animate calls
+  step: function (state, circle) {
+    circle.path.setAttribute("stroke", state.color);
+    circle.path.setAttribute("stroke-width", state.width);
+
+    var value = Math.round(circle.value() * 100) + " %";
+    if (value === 0) {
+      circle.setText("");
+    } else {
+      circle.setText(value);
+    }
+  },
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = "1rem";
+
+bar.animate(0.9); // Number from 0.0 to 1.0
+
+// GRAPHIC DESIGN
+var bar = new ProgressBar.Circle(circle3, {
+  color: "#aaa",
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: "easeInOut",
+  duration: 1400,
+  text: {
+    autoStyleContainer: false,
+  },
+  from: { color: " #ffffff", width: 1 },
+  to: { color: "#ffc576", width: 4 },
+  // Set default step function for all animate calls
+  step: function (state, circle) {
+    circle.path.setAttribute("stroke", state.color);
+    circle.path.setAttribute("stroke-width", state.width);
+
+    var value = Math.round(circle.value() * 100) + " %";
+    if (value === 0) {
+      circle.setText("");
+    } else {
+      circle.setText(value);
+    }
+  },
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = "1rem";
+
+bar.animate(0.7); // Number from 0.0 to 1.0
+
+// AUTO CAD
+var bar = new ProgressBar.Circle(circle4, {
+  color: "#aaa",
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: "easeInOut",
+  duration: 1400,
+  text: {
+    autoStyleContainer: false,
+  },
+  from: { color: " #ffffff", width: 1 },
+  to: { color: "#ffc576", width: 4 },
+  // Set default step function for all animate calls
+  step: function (state, circle) {
+    circle.path.setAttribute("stroke", state.color);
+    circle.path.setAttribute("stroke-width", state.width);
+
+    var value = Math.round(circle.value() * 100) + " %";
+    if (value === 0) {
+      circle.setText("");
+    } else {
+      circle.setText(value);
+    }
+  },
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = "1rem";
+
+bar.animate(0.85); // Number from 0.0 to 1.0

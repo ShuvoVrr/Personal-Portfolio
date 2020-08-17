@@ -10624,7 +10624,9 @@ html {
   }
 }
 
+/*********************/
 /* Header */
+/*********************/
 header {
   height: 100vh;
   position: relative;
@@ -10724,6 +10726,35 @@ header .hero .hero-img {
   padding-bottom: 100px;
 }
 
+.about-more .circle-progress #circle1 {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.about-more .circle-progress #circle2 {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.about-more .circle-progress #circle3 {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.about-more .circle-progress #circle4 {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+/** RESUME **/
 .resume {
   color: #ffffff;
   background: #1f2235;
@@ -10736,7 +10767,7 @@ header .hero .hero-img {
 }
 
 .resume .education-list .single-education {
-  border-left: 2px solid #ffc576;
+  border-left: 3px solid #ffc576;
   padding-left: 20px;
   position: relative;
   margin-bottom: 40px;
@@ -10765,5 +10796,93 @@ header .hero .hero-img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background: #ffc576;
+}
+
+.resume .education-list .single-education .year span {
+  padding: 4px 12px;
+  background: #ffc576;
+  color: #000000;
+  display: inline-block;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.resume .education-list .single-education .year span::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffc576;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+}
+
+/** Services **/
+.services {
+  color: #ffffff;
+  background: #313552;
+  padding: 100px 0;
+}
+
+.services .heading {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.services .icon-box {
+  text-align: center;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 7px #ffc6769f;
+          box-shadow: 0 0 7px #ffc6769f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services .icon-box:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 14px #ffc6769f;
+          box-shadow: 0 0 14px #ffc6769f;
+}
+
+/** Portfolio **/
+.portfolio {
+  color: #ffffff;
+  background: #1f2235;
+  padding: 100px 0;
+}
+
+/** Done **/
+.done {
+  color: #ffffff;
+  background: #313552;
+  padding: 100px 0;
+}
+
+/** testimonial **/
+.testimonial {
+  color: #ffffff;
+  background: #1f2235;
+  padding: 100px 0;
+}
+
+/** Blog **/
+.blog {
+  color: #ffffff;
+  background: #313552;
+  padding: 100px 0;
+}
+
+/** Contact **/
+.contact {
+  color: #ffffff;
+  background: #1f2235;
+  padding: 100px 0;
+}
+
+footer {
+  color: #ffffff;
+  background: #313552;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */

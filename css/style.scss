@@ -13,9 +13,19 @@ $theme-colors: (
 // Bootstrap and its default variables
 @import "../scss/bootstrap";
 
-/* Main Style */
-/** Universal **/
+@mixin sec1 {
+  color: #ffffff;
+  background: #313552;
+}
 
+@mixin sec2 {
+  color: #ffffff;
+  background: #1f2235;
+}
+
+/* Main Style */
+
+/** Universal **/
 html,
 body,
 h1,
@@ -159,7 +169,10 @@ html {
   }
 }
 
+/*********************/
 /* Header */
+/*********************/
+
 // HEADER section
 header {
   height: 100vh;
@@ -232,19 +245,45 @@ header {
 // ABOUT section
 
 .about {
-  color: #ffffff;
-  background: #313552;
+  @include sec1;
   padding: 100px 0;
 }
+
 .about-more {
-  color: #ffffff;
-  background: #313552;
+  @include sec1;
   padding-bottom: 100px;
+
+  .circle-progress {
+    #circle1 {
+      margin: 20px;
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+    #circle2 {
+      margin: 20px;
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+    #circle3 {
+      margin: 20px;
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+    #circle4 {
+      margin: 20px;
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+  }
 }
 
+/** RESUME **/
 .resume {
-  color: #ffffff;
-  background: #1f2235;
+  @include sec2;
   padding: 100px 0;
 
   .education-list {
@@ -252,7 +291,7 @@ header {
     padding-left: 30px;
 
     .single-education {
-      border-left: 2px solid #ffc576;
+      border-left: 3px solid #ffc576;
       padding-left: 20px;
       position: relative;
       margin-bottom: 40px;
@@ -278,6 +317,87 @@ header {
         transform: translateY(-50%);
         background: #ffc576;
       }
+      .year {
+        span {
+          padding: 4px 12px;
+          background: #ffc576;
+          color: #000000;
+          display: inline-block;
+          margin-bottom: 15px;
+          position: relative;
+
+          &::after {
+            content: " ";
+            width: 0;
+            height: 0;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #ffc576;
+            position: absolute;
+            top: 100%;
+            left: 10%;
+          }
+        }
+      }
     }
   }
+}
+
+/** Services **/
+.services {
+  @include sec1;
+  padding: 100px 0;
+
+  .heading {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .icon-box {
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 7px #ffc6769f;
+    transition: 0.3s;
+
+    img {
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 14px #ffc6769f;
+    }
+  }
+}
+
+/** Portfolio **/
+.portfolio {
+  @include sec2;
+  padding: 100px 0;
+}
+
+/** Done **/
+.done {
+  @include sec1;
+  padding: 100px 0;
+}
+
+/** testimonial **/
+.testimonial {
+  @include sec2;
+  padding: 100px 0;
+}
+
+/** Blog **/
+.blog {
+  @include sec1;
+  padding: 100px 0;
+}
+
+/** Contact **/
+.contact {
+  @include sec2;
+  padding: 100px 0;
+}
+
+footer {
+  @include sec1;
+  padding: 10px 0;
 }
