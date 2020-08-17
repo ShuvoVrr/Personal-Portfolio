@@ -1,0 +1,11 @@
+progress bar : https://kimmobrunfeldt.github.io/progressbar.js/
+
+mixitup : https://www.kunkalabs.com/mixitup/
+
+owl carousel : https://owlcarousel2.github.io/OwlCarousel2/
+
+animation : https://michalsnik.github.io/aos/
+
+typing style : https://mattboldt.com/demos/typed-js/
+
+countdown : https://inorganik.github.io/countUp.js/
