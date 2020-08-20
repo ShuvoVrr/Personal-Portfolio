@@ -50,7 +50,7 @@ html {
 }
 
 .sub-heading {
-  font-family: "Russo One", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
 }
 
@@ -237,6 +237,20 @@ header {
     .hero-img {
       position: absolute;
       bottom: -150px;
+    }
+    .heading {
+      font-size: 25px;
+    }
+    .sub-heading {
+      font-size: 60px;
+    }
+    .about-me {
+      font-size: 20px;
+    }
+
+    .btn {
+      position: absolute;
+      bottom: 15%;
     }
   }
 }

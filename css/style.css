@@ -10422,7 +10422,7 @@ html {
 }
 
 .sub-heading {
-  font-family: "Russo One", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
 }
 
@@ -10711,6 +10711,23 @@ header .hero .my-info {
 header .hero .hero-img {
   position: absolute;
   bottom: -150px;
+}
+
+header .hero .heading {
+  font-size: 25px;
+}
+
+header .hero .sub-heading {
+  font-size: 60px;
+}
+
+header .hero .about-me {
+  font-size: 20px;
+}
+
+header .hero .btn {
+  position: absolute;
+  bottom: 15%;
 }
 
 /* ABOUT */
