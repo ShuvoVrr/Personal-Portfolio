@@ -46,7 +46,7 @@ html {
 
 .heading {
   color: #ffc576;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .sub-heading {
@@ -373,6 +373,8 @@ header {
     transition: 0.3s;
 
     img {
+      width: 70px;
+      margin-bottom: 20px;
     }
     &:hover {
       cursor: pointer;
@@ -403,6 +405,32 @@ header {
 .blog {
   @include sec1;
   padding: 100px 0;
+
+  .heading {
+    margin-bottom: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .col-md-4 {
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 5px #ffc6769f;
+    transition: 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 15px #ffc6769f;
+    }
+
+    .blog-title {
+      margin-top: 15px;
+    }
+  }
 }
 
 /** Contact **/

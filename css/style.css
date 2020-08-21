@@ -10418,7 +10418,7 @@ html {
 
 .heading {
   color: #ffc576;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .sub-heading {
@@ -10856,6 +10856,11 @@ header .hero .btn {
   transition: 0.3s;
 }
 
+.services .icon-box img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
 .services .icon-box:hover {
   cursor: pointer;
   -webkit-box-shadow: 0 0 14px #ffc6769f;
@@ -10888,6 +10893,35 @@ header .hero .btn {
   color: #ffffff;
   background: #313552;
   padding: 100px 0;
+}
+
+.blog .heading {
+  margin-bottom: 40px;
+}
+
+.blog a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.blog .col-md-4 {
+  width: 30%;
+  margin: 0 auto;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 5px #ffc6769f;
+          box-shadow: 0 0 5px #ffc6769f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blog .col-md-4:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 15px #ffc6769f;
+          box-shadow: 0 0 15px #ffc6769f;
+}
+
+.blog .col-md-4 .blog-title {
+  margin-top: 15px;
 }
 
 /** Contact **/
