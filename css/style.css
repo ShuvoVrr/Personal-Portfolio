@@ -10771,6 +10771,11 @@ header .hero .btn {
   position: relative;
 }
 
+.about-more .knowledge-list li {
+  line-height: 44px;
+  letter-spacing: 0.7px;
+}
+
 /** RESUME **/
 .resume {
   color: #ffffff;
