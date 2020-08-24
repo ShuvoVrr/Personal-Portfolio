@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -430,15 +432,40 @@
     <section class="testimonial">
       <div class="container">
         <h2 class="heading">Testimonial</h2>
-        <h3 class="sub-heading">Happy Client Says</h3>
+        <h3 class="sub-heading mb-4">Happy Client Says</h3>
         <div class="owl-carousel">
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
+          <div class="slider text-center">
+            <img src="images/steve.jpg" alt="" />
+            <h2 class="title">Steve Jobs</h2>
+            <span>Owner</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="slider text-center">
+            <img src="images/mark.jpg" alt="" />
+            <h2 class="title">Mark Zuckerberg</h2>
+            <span>CEO</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="slider text-center">
+            <img src="images/bill-gates.jpeg" alt="" />
+            <h2 class="title">Bill Gates</h2>
+            <span>Manager</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="slider text-center">
+            <img src="images/steve.jpg" alt="" />
+            <h2 class="title">Lorem Ipsum</h2>
+            <span>SEO</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -505,10 +532,9 @@
 
     <section class="contact">
       <div class="container">
+        <h2 class="heading mb-4">GET IN TOUCH</h2>
         <div class="row">
           <div class="col-md-5">
-            <h2 class="heading">GET IN TOUCH</h2>
-
             <div class="contact-info">
               Phone +225 568 455 Email email@gmail.com Location location dhtike
             </div>
@@ -560,7 +586,7 @@
               <li class="nav-item">
                 <a
                   target="_blank"
-                  class="nav-link text-secondary"
+                  class="nav-link"
                   href="https://www.facebook.com/shuvotarafder.shuvo"
                   >Facebook</a
                 >
@@ -568,24 +594,18 @@
               <li class="nav-item">
                 <a
                   target="_blank"
-                  class="nav-link text-secondary"
+                  class="nav-link"
                   href="https://www.instagram.com/shuvo_tarafder/"
                   >Instagram</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  target="_blank"
-                  class="nav-link text-secondary"
-                  href="https://twitter.com/"
+                <a target="_blank" class="nav-link" href="https://twitter.com/"
                   >Twitter</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  target="_blank"
-                  class="nav-link text-secondary"
-                  href="https://www.gmail.com"
+                <a target="_blank" class="nav-link" href="https://www.gmail.com"
                   >Email</a
                 >
               </li>
@@ -596,11 +616,15 @@
     </footer>
     <!-- Footer Part End -->
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img class="top-arrow img-fluid" src="images/top-arrow.svg" alt="^" />
+    </button>
 
     <!-- JS file -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/progressbar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

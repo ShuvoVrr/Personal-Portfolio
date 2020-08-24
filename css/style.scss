@@ -63,16 +63,20 @@ html {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: gray; /* Set a background color */
+  background-color: #1f2336; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
+  padding: 0; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+
+  .top-arrow {
+    width: 50px;
+  }
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #2c304a; /* Add a dark-grey background on hover */
 }
 
 //**** Progress bar
@@ -406,6 +410,38 @@ header {
 .testimonial {
   @include sec2;
   padding: 100px 0;
+
+  .slider {
+    padding: 15px 5px;
+    border: 0.5px solid #ffc6764b;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-right: 20px;
+    background: #2c304a88;
+
+    &:hover {
+      cursor: ew-resize;
+      border-radius: 10px;
+      border: 1px solid #ffc676d7;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    span {
+      color: #ffffff77;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: inline;
+    }
+  }
 }
 
 /** Blog **/
@@ -444,9 +480,25 @@ header {
 .contact {
   @include sec2;
   padding: 100px 0;
+
+  .contact-info {
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+  }
 }
 
 footer {
   @include sec1;
   padding: 10px 0;
+
+  ul {
+    a {
+      color: #ffffff;
+
+      &:hover {
+        color: #ffc576;
+      }
+    }
+  }
 }

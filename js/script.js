@@ -263,3 +263,10 @@ bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 bar.text.style.fontSize = "1rem";
 
 bar.animate(0.85); // Number from 0.0 to 1.0
+
+/** Owl carousel **/
+// owl carousel
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
+});
