@@ -10419,6 +10419,7 @@ html {
 .heading {
   color: #ffc576;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .sub-heading {
@@ -10715,6 +10716,7 @@ header .hero .my-info {
 header .hero .hero-img {
   position: absolute;
   bottom: -150px;
+  max-width: 80vh;
 }
 
 header .hero .heading {

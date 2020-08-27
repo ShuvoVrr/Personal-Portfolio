@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
+    <!-- google fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -12,15 +13,18 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!-- css files -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Header Part started -->
+
     <header class="bg-dark text-white">
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light main-navigation"
+        class="navbar fixed-top shadow navbar-expand-lg navbar-dark bg-light main-navigation"
       >
         <div class="container">
           <a class="navbar-brand" href="#">Navbar</a>
@@ -90,7 +94,10 @@
                 <h1 class="sub-heading">Shuvo</h1>
                 <p class="about-me">I'm Freelancer/Web Developer/SEO Expert</p>
               </div>
-              <a class="btn btn-outline-secondary px-4 py-2" href="#"
+              <a
+                data-aos="zoom-in"
+                class="btn btn-outline-secondary px-4 py-2"
+                href="#"
                 >My Work</a
               >
             </div>
@@ -225,38 +232,32 @@
             <div class="education-list">
               <div
                 class="single-education wow fadeInUp"
-                style="visibility: visible; animation-name: fadeInUp;"
+                style="visibility: visible; animation-name: fadeInUp"
               >
                 <div class="year">
                   <span>2006-2008</span>
                 </div>
-                <h4 class="university-name">
-                  Envato University
-                </h4>
+                <h4 class="university-name">Envato University</h4>
                 <p class="degree">MSC in Computer Engineer</p>
               </div>
               <div
                 class="single-education wow fadeInUp"
-                style="visibility: visible; animation-name: fadeInUp;"
+                style="visibility: visible; animation-name: fadeInUp"
               >
                 <div class="year">
                   <span>2003-2005</span>
                 </div>
-                <h4 class="university-name">
-                  Envato University
-                </h4>
+                <h4 class="university-name">Envato University</h4>
                 <p class="degree">BSC in Computer Engineer</p>
               </div>
               <div
                 class="single-education wow fadeInUp"
-                style="visibility: visible; animation-name: fadeInUp;"
+                style="visibility: visible; animation-name: fadeInUp"
               >
                 <div class="year">
                   <span>2000-2002</span>
                 </div>
-                <h4 class="university-name">
-                  Envato University
-                </h4>
+                <h4 class="university-name">Envato University</h4>
                 <p class="degree">HSC in Computer Engineer</p>
               </div>
             </div>
@@ -266,38 +267,32 @@
             <div class="education-list">
               <div
                 class="single-education wow fadeInUp"
-                style="visibility: visible; animation-name: fadeInUp;"
+                style="visibility: visible; animation-name: fadeInUp"
               >
                 <div class="year">
                   <span>2014-2018</span>
                 </div>
-                <h4 class="university-name">
-                  Envato Company
-                </h4>
+                <h4 class="university-name">Envato Company</h4>
                 <p class="degree">Full Stack Web Developer</p>
               </div>
               <div
                 class="single-education wow fadeInUp"
-                style="visibility: visible; animation-name: fadeInUp;"
+                style="visibility: visible; animation-name: fadeInUp"
               >
                 <div class="year">
                   <span>2011-2014</span>
                 </div>
-                <h4 class="university-name">
-                  Envato Company
-                </h4>
+                <h4 class="university-name">Envato Company</h4>
                 <p class="degree">Web Developer</p>
               </div>
               <div
                 class="single-education wow fadeInUp"
-                style="visibility: visible; animation-name: fadeInUp;"
+                style="visibility: visible; animation-name: fadeInUp"
               >
                 <div class="year">
                   <span>2009-2011</span>
                 </div>
-                <h4 class="university-name">
-                  Envato Company
-                </h4>
+                <h4 class="university-name">Envato Company</h4>
                 <p class="degree">Web Designer</p>
               </div>
             </div>
@@ -410,18 +405,22 @@
 
     <section class="done">
       <div class="container">
-        <div class="row">
+        <div class="row text-center">
           <div class="col-md-3">
-            80 k+ Project Done
+            <h2 class="counter">80</h2>
+            Project Done
           </div>
           <div class="col-md-3">
-            19 k+ Happy users
+            <h2 class="counter">19</h2>
+            Happy users
           </div>
           <div class="col-md-3">
-            39 k+ Great Reviews
+            <h2 class="counter">39</h2>
+            Great Reviews
           </div>
           <div class="col-md-3">
-            50 + Support Team
+            <h2 class="counter">50</h2>
+            Support Team
           </div>
         </div>
       </div>
@@ -433,38 +432,31 @@
       <div class="container">
         <h2 class="heading">Testimonial</h2>
         <h3 class="sub-heading mb-4">Happy Client Says</h3>
-        <div class="owl-carousel">
+        <!-- OWL carousel SLIDER -->
+        <div class="owl-carousel owl-theme">
           <div class="slider text-center">
             <img src="images/steve.jpg" alt="" />
             <h2 class="title">Steve Jobs</h2>
             <span>Owner</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="slider text-center">
             <img src="images/mark.jpg" alt="" />
             <h2 class="title">Mark Zuckerberg</h2>
             <span>CEO</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="slider text-center">
             <img src="images/bill-gates.jpeg" alt="" />
             <h2 class="title">Bill Gates</h2>
             <span>Manager</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="slider text-center">
             <img src="images/steve.jpg" alt="" />
             <h2 class="title">Lorem Ipsum</h2>
             <span>SEO</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>
@@ -578,9 +570,7 @@
     <footer>
       <div class="container">
         <div class="d-flex">
-          <div class="copyright mt-2">
-            Copyright By@Example - 2020
-          </div>
+          <div class="copyright mt-2">Copyright By@Example - 2020</div>
           <nav class="footer-nav ml-auto">
             <ul class="nav">
               <li class="nav-item">
@@ -620,11 +610,14 @@
       <img class="top-arrow img-fluid" src="images/top-arrow.svg" alt="^" />
     </button>
 
-    <!-- JS file -->
+    <!-- JS files -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/progressbar.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -264,9 +264,19 @@ bar.text.style.fontSize = "1rem";
 
 bar.animate(0.85); // Number from 0.0 to 1.0
 
-/** Owl carousel **/
-// owl carousel
+// Owl carousel
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 });
+
+// Counter up js
+jQuery(document).ready(function ($) {
+  $(".counter").counterUp({
+    delay: 10,
+    time: 1000,
+  });
+});
+
+// ANIMATION AOS
+AOS.init();
