@@ -10642,6 +10642,18 @@ header {
   background-attachment: scroll;
 }
 
+header nav ul li {
+  padding: 0 8px;
+}
+
+header nav ul li a {
+  color: #ffffff;
+}
+
+header nav ul li .nav-link:hover {
+  color: #ffc576;
+}
+
 header .hero .animated-img-1 {
   position: absolute;
   top: 50%;
@@ -10780,6 +10792,7 @@ header .hero .btn {
 .about-more .knowledge-list li {
   line-height: 44px;
   letter-spacing: 0.7px;
+  margin-bottom: 0.5px;
 }
 
 /** RESUME **/

@@ -188,6 +188,20 @@ header {
   background-position: left bottom;
   background-attachment: scroll;
 
+  nav {
+    ul {
+      li {
+        padding: 0 8px;
+        a {
+          color: #ffffff;
+        }
+        .nav-link:hover {
+          color: #ffc576;
+        }
+      }
+    }
+  }
+
   .hero {
     .animated-img {
       &-1 {
@@ -304,6 +318,7 @@ header {
     li {
       line-height: 44px;
       letter-spacing: 0.7px;
+      margin-bottom: 0.5px;
     }
   }
 }

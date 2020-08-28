@@ -22,12 +22,14 @@
   <body>
     <!-- Header Part started -->
 
-    <header class="bg-dark text-white">
+    <header id="home" class="bg-dark text-white">
       <nav
-        class="navbar fixed-top shadow navbar-expand-lg navbar-dark bg-light main-navigation"
+        class="navbar fixed-top shadow navbar-expand-lg bg-light main-navigation"
       >
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="#" alt="LOGO" />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -42,16 +44,28 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#resume">My Resume</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#blog">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -95,7 +109,7 @@
                 <p class="about-me">I'm Freelancer/Web Developer/SEO Expert</p>
               </div>
               <a
-                data-aos="zoom-in"
+                data-aos="zoom-in-down"
                 class="btn btn-outline-secondary px-4 py-2"
                 href="#"
                 >My Work</a
@@ -115,11 +129,11 @@
     <!-- Header Part End -->
 
     <!-- About Part start -->
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
-            <h2 class="heading">ABOUT ME</h2>
+          <h2 class="heading">ABOUT ME</h2>
+          <div data-aos="fade-right" class="col-md-7">
             <h3 class="sub-heading">Why hire me for your next projects?</h3>
             <p class="about-info">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
@@ -135,7 +149,7 @@
 
             <a class="btn btn-outline-secondary" href="#">Download My CV</a>
           </div>
-          <div class="offset-md-1 col-md-4">
+          <div data-aos="fade-left" class="offset-md-1 col-md-4">
             <div class="line-progress">
               <span>Design</span>
               <div id="designBar"></div>
@@ -152,7 +166,7 @@
     <section class="about-more">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div data-aos="fade-right" class="col-md-6">
             <h3 class="sub-heading">Professional Skills</h3>
             <div class="skills border border-secondary rounded py-5">
               <div class="row pl-4 ml-5">
@@ -203,7 +217,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div data-aos="fade-left" class="col-md-6">
             <h3 class="sub-heading">Knowledge</h3>
             <div class="skills border border-secondary rounded p-5">
               <ul class="knowledge-list">
@@ -223,11 +237,11 @@
     <!-- About Part End -->
 
     <!-- Resume Part start -->
-    <section class="resume">
+    <section id="resume" class="resume">
       <div class="container">
         <h2 class="heading">MY RESUME</h2>
         <div class="row">
-          <div class="col-md-6">
+          <div data-aos="fade-right" class="col-md-6">
             <h3 class="sub-heading">Education</h3>
             <div class="education-list">
               <div
@@ -262,7 +276,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div data-aos="fade-left" class="col-md-6">
             <h3 class="sub-heading">Experience</h3>
             <div class="education-list">
               <div
@@ -303,10 +317,10 @@
     <!-- Resume Part End -->
 
     <!-- Services Part start -->
-    <section class="services">
+    <section id="services" class="services">
       <div class="container">
         <h2 class="heading">My Services</h2>
-        <div class="row">
+        <div data-aos="fade-up" class="row">
           <div class="col-md-4">
             <div class="icon-box">
               <img class="img-fluid" src="images/server.svg" alt="server" />
@@ -339,7 +353,7 @@
           </div>
         </div>
         <div class="m-4"></div>
-        <div class="row">
+        <div data-aos="fade-down" class="row">
           <div class="col-md-4">
             <div class="icon-box">
               <img class="img-fluid" src="images/server.svg" alt="server" />
@@ -377,7 +391,7 @@
 
     <!-- portfolio Part start -->
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="container">
         <h2 class="heading">My Portfolio</h2>
         <div class="portfolio-items">
@@ -406,19 +420,19 @@
     <section class="done">
       <div class="container">
         <div class="row text-center">
-          <div class="col-md-3">
+          <div data-aos="zoom-in" class="col-md-3">
             <h2 class="counter">80</h2>
             Project Done
           </div>
-          <div class="col-md-3">
+          <div data-aos="zoom-in" class="col-md-3">
             <h2 class="counter">19</h2>
             Happy users
           </div>
-          <div class="col-md-3">
+          <div data-aos="zoom-in" class="col-md-3">
             <h2 class="counter">39</h2>
             Great Reviews
           </div>
-          <div class="col-md-3">
+          <div data-aos="zoom-in" class="col-md-3">
             <h2 class="counter">50</h2>
             Support Team
           </div>
@@ -428,35 +442,37 @@
     <!-- Done Part End -->
 
     <!-- Testimonial Part start -->
-    <section class="testimonial">
+    <section id="testimonial" class="testimonial">
       <div class="container">
         <h2 class="heading">Testimonial</h2>
-        <h3 class="sub-heading mb-4">Happy Client Says</h3>
-        <!-- OWL carousel SLIDER -->
-        <div class="owl-carousel owl-theme">
-          <div class="slider text-center">
-            <img src="images/steve.jpg" alt="" />
-            <h2 class="title">Steve Jobs</h2>
-            <span>Owner</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="slider text-center">
-            <img src="images/mark.jpg" alt="" />
-            <h2 class="title">Mark Zuckerberg</h2>
-            <span>CEO</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="slider text-center">
-            <img src="images/bill-gates.jpeg" alt="" />
-            <h2 class="title">Bill Gates</h2>
-            <span>Manager</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="slider text-center">
-            <img src="images/steve.jpg" alt="" />
-            <h2 class="title">Lorem Ipsum</h2>
-            <span>SEO</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div data-aos="fade-up">
+          <h3 class="sub-heading mb-4">Happy Client Says</h3>
+          <!-- OWL carousel SLIDER -->
+          <div class="owl-carousel owl-theme">
+            <div class="slider text-center">
+              <img src="images/steve.jpg" alt="" />
+              <h2 class="title">Steve Jobs</h2>
+              <span>Owner</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="slider text-center">
+              <img src="images/mark.jpg" alt="" />
+              <h2 class="title">Mark Zuckerberg</h2>
+              <span>CEO</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="slider text-center">
+              <img src="images/bill-gates.jpeg" alt="" />
+              <h2 class="title">Bill Gates</h2>
+              <span>Manager</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="slider text-center">
+              <img src="images/steve.jpg" alt="" />
+              <h2 class="title">Lorem Ipsum</h2>
+              <span>SEO</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -465,10 +481,10 @@
 
     <!-- Blog Part start -->
 
-    <section class="blog">
+    <section id="blog" class="blog">
       <div class="container">
         <h2 class="heading">My Recent Posts</h2>
-        <div class="row">
+        <div data-aos="fade-up" class="row">
           <div class="col-md-4">
             <a href="#">
               <div class="blog-info figure">
@@ -522,16 +538,16 @@
 
     <!-- Contact Part start -->
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container">
         <h2 class="heading mb-4">GET IN TOUCH</h2>
         <div class="row">
-          <div class="col-md-5">
+          <div data-aos="fade-right" class="col-md-5">
             <div class="contact-info">
               Phone +225 568 455 Email email@gmail.com Location location dhtike
             </div>
           </div>
-          <div class="offset-md-1 col-md-6">
+          <div data-aos="fade-left" class="offset-md-1 col-md-6">
             <form class="row g-3">
               <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email</label>
